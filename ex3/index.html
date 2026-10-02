@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo dos Felinos</title>
+
+    <style>
+        body {
+            font-family: Arial;
+        }
+
+        #gatos {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-top: 50px;
+        }
+
+        .gato {
+            width: 120px;
+            text-align: center;
+        }
+
+        .gato img {
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+        }
+
+        .gato p {
+            font-size: 11px;
+        }
+
+        .sorte {
+            width: 120px;
+            background-color: darkred;
+            color: white;
+            border: none;
+            padding: 5px;
+        }
+
+        #numero {
+            width: 110px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="gatos">
+
+        <div class="gato">
+            <img id="gato01" src="Imagens/gato01.gif">
+            <p>Clique em mim!</p>
+        </div>
+
+        <div class="gato">
+            <img id="gato02" src="Imagens/gato02.gif">
+            <p>Clique sobre mim várias vezes!</p>
+            <p id="carinhos">Carinhos: 0</p>
+        </div>
+
+        <div class="gato">
+            <img id="gato03" src="Imagens/gato03.gif">
+            <p>Passe o cursor do mouse sobre mim!</p>
+        </div>
+
+        <div class="gato">
+            <img id="gato04" src="Imagens/gato04.gif">
+            <p id="textoGato04">lá lá lá lá lá lá</p>
+        </div>
+
+        <div class="gato">
+            <img id="gato05" src="Imagens/gato05.gif">
+            <button class="sorte" id="btnSorte">Gerar número da sorte</button>
+            <input type="text" id="numero">
+        </div>
+
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>

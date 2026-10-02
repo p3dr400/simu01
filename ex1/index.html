@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acesso ao sistema</title>
+
+    <style>
+        body {
+            font-family: Arial;
+        }
+
+        fieldset {
+            width: 500px;
+            margin: 100px auto;
+            border: 2px solid green;
+        }
+
+        legend {
+            color: green;
+        }
+
+        label {
+            color: green;
+        }
+
+        input {
+            width: 350px;
+            border: none;
+            border-bottom: 2px solid green;
+            outline: none;
+        }
+
+        button {
+            display: block;
+            width: 140px;
+            margin: 20px auto;
+            background-color: green;
+            color: white;
+            border: none;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <fieldset>
+        <legend>Acesso ao sistema</legend>
+
+        <label for="txtNome">Nome completo:</label>
+        <input type="text" id="txtNome">
+
+        <button id="btnEntrar">Entrar</button>
+    </fieldset>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
